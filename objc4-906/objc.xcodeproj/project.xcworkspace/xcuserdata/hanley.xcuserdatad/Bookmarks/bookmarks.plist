@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>top-level-items</key>
+	<array>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>1037</string>
+					<key>StartingColumnNumber</key>
+					<string>0</string>
+					<key>StartingLineNumber</key>
+					<string>1036</string>
+					<key>Timestamp</key>
+					<string>728206571.0412199</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/NSObject.mm</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>    static inline id *autoreleaseFast(id obj)
+</string>
+				<key>leading</key>
+				<string>
+
+</string>
+				<key>trailing</key>
+				<string>    {
+        AutoreleasePoolPage *page = hotPage();
+        if (page &amp;&amp; !page-&gt;full()) {
+</string>
+			</dict>
+			<key>title</key>
+			<string>压入 obj 到 autoreleasepool 中</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>1040</string>
+					<key>StartingColumnNumber</key>
+					<string>0</string>
+					<key>StartingLineNumber</key>
+					<string>1039</string>
+					<key>Timestamp</key>
+					<string>728206571.066496</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/NSObject.mm</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>        if (page &amp;&amp; !page-&gt;full()) {
+</string>
+				<key>leading</key>
+				<string>    {
+        AutoreleasePoolPage *page = hotPage();
+</string>
+				<key>trailing</key>
+				<string>            return page-&gt;add(obj);
+        } else if (page) {
+            return autoreleaseFullPage(obj, page);
+</string>
+			</dict>
+			<key>title</key>
+			<string>有 hotPage 且没有满</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>1043</string>
+					<key>StartingColumnNumber</key>
+					<string>50</string>
+					<key>StartingLineNumber</key>
+					<string>1042</string>
+					<key>Timestamp</key>
+					<string>728206602.812616</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/NSObject.mm</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>            return page-&gt;add(obj);
+        } else if (page) {
+            return autoreleaseFullPage(obj, page);</string>
+				<key>trailing</key>
+				<string>        } else {
+            return autoreleaseNoPage(obj);
+        }
+</string>
+			</dict>
+			<key>title</key>
+			<string>有 hotPage 但满了</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>1045</string>
+					<key>StartingColumnNumber</key>
+					<string>42</string>
+					<key>StartingLineNumber</key>
+					<string>1044</string>
+					<key>Timestamp</key>
+					<string>728206612.4288419</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/NSObject.mm</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>            return autoreleaseFullPage(obj, page);
+        } else {
+            return autoreleaseNoPage(obj);</string>
+				<key>trailing</key>
+				<string>        }
+    }
+
+</string>
+			</dict>
+			<key>title</key>
+			<string>没有 hotPage</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>2711</string>
+					<key>StartingColumnNumber</key>
+					<string>21</string>
+					<key>StartingLineNumber</key>
+					<string>2710</string>
+					<key>Timestamp</key>
+					<string>728206633.827372</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/objc-runtime-new.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>  void operator=(objc_class&amp;&amp;) = delete;
+    // Class ISA;
+    Class superclass;</string>
+				<key>trailing</key>
+				<string>    cache_t cache;             // formerly cache pointer and vtable
+    class_data_bits_t bits;    // class_rw_t * plus custom rr/alloc flags
+
+</string>
+			</dict>
+			<key>title</key>
+			<string>superclass</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>2705</string>
+					<key>StartingColumnNumber</key>
+					<string>33</string>
+					<key>StartingLineNumber</key>
+					<string>2704</string>
+					<key>Timestamp</key>
+					<string>728206649.288011</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/objc-runtime-new.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>
+
+struct objc_class : objc_object {</string>
+				<key>trailing</key>
+				<string>  objc_class(const objc_class&amp;) = delete;
+  objc_class(objc_class&amp;&amp;) = delete;
+  void operator=(const objc_class&amp;) = delete;
+</string>
+			</dict>
+			<key>title</key>
+			<string>继承自 objc_object</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>132</string>
+					<key>StartingColumnNumber</key>
+					<string>0</string>
+					<key>StartingLineNumber</key>
+					<string>131</string>
+					<key>Timestamp</key>
+					<string>728206670.90049</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/objc-private.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>    isa_t &amp;isa() { return *reinterpret_cast&lt;isa_t *&gt;(isa_storage); }
+</string>
+				<key>leading</key>
+				<string>    char isa_storage[sizeof(isa_t)];
+
+</string>
+				<key>trailing</key>
+				<string>    const isa_t &amp;isa() const { return *reinterpret_cast&lt;const isa_t *&gt;(isa_storage); }
+
+public:
+</string>
+			</dict>
+			<key>title</key>
+			<string>isa 用于指向类</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>82</string>
+					<key>StartingColumnNumber</key>
+					<string>33</string>
+					<key>StartingLineNumber</key>
+					<string>81</string>
+					<key>Timestamp</key>
+					<string>728206695.5366729</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/objc-private.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>struct category_t;
+
+typedef struct objc_class *Class;</string>
+				<key>trailing</key>
+				<string>typedef struct objc_object *id;
+typedef struct classref *classref_t;
+
+</string>
+			</dict>
+			<key>title</key>
+			<string>Class 定义</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>83</string>
+					<key>StartingColumnNumber</key>
+					<string>31</string>
+					<key>StartingLineNumber</key>
+					<string>82</string>
+					<key>Timestamp</key>
+					<string>728206704.287046</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/objc-private.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>
+typedef struct objc_class *Class;
+typedef struct objc_object *id;</string>
+				<key>trailing</key>
+				<string>typedef struct classref *classref_t;
+
+namespace {
+</string>
+			</dict>
+			<key>title</key>
+			<string>id 定义</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>94</string>
+					<key>EndingLineNumber</key>
+					<string>325</string>
+					<key>StartingColumnNumber</key>
+					<string>93</string>
+					<key>StartingLineNumber</key>
+					<string>325</string>
+					<key>Timestamp</key>
+					<string>728206723.446667</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/objc-object.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string> </string>
+				<key>leading</key>
+				<string>
+inline void 
+objc_object::initIsa(Class cls, bool nonpointer, UNUSED_WITHOUT_INDEXED_ISA_AND_DTOR_BIT bool</string>
+				<key>trailing</key>
+				<string>hasCxxDtor)
+{ 
+    ASSERT(!isTaggedPointer()); 
+</string>
+			</dict>
+			<key>title</key>
+			<string>初始化 isa, 其他的 isa 初始化最后都会调用到这里来</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>2160</string>
+					<key>StartingColumnNumber</key>
+					<string>22</string>
+					<key>StartingLineNumber</key>
+					<string>2159</string>
+					<key>Timestamp</key>
+					<string>728206747.817247</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/NSObject.mm</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>
+id
+_objc_rootInit(id obj)</string>
+				<key>trailing</key>
+				<string>{
+    // In practice, it will be hard to rely on this function.
+    // Many classes do not properly chain -init calls.
+</string>
+			</dict>
+			<key>title</key>
+			<string>don't do anything!</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>98</string>
+					<key>StartingColumnNumber</key>
+					<string>80</string>
+					<key>StartingLineNumber</key>
+					<string>97</string>
+					<key>Timestamp</key>
+					<string>728206782.476265</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/isa.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>        uintptr_t nonpointer        : 1;                                       \
+        uintptr_t has_assoc         : 1;                                       \
+        uintptr_t has_cxx_dtor      : 1;                                       \</string>
+				<key>trailing</key>
+				<string>        uintptr_t shiftcls          : 33; /*MACH_VM_MAX_ADDRESS 0x1000000000*/ \
+        uintptr_t magic             : 6;                                       \
+        uintptr_t weakly_referenced : 1;                                       \
+</string>
+			</dict>
+			<key>title</key>
+			<string>表示该对象是否有 C++ 或 ARC 的析构函数，如果没有，则析构时更快</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>99</string>
+					<key>StartingColumnNumber</key>
+					<string>0</string>
+					<key>StartingLineNumber</key>
+					<string>98</string>
+					<key>Timestamp</key>
+					<string>728206838.4148149</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/isa.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>        uintptr_t shiftcls          : 33; /*MACH_VM_MAX_ADDRESS 0x1000000000*/ \
+</string>
+				<key>leading</key>
+				<string>        uintptr_t has_assoc         : 1;                                       \
+        uintptr_t has_cxx_dtor      : 1;                                       \
+</string>
+				<key>trailing</key>
+				<string>        uintptr_t magic             : 6;                                       \
+        uintptr_t weakly_referenced : 1;                                       \
+        uintptr_t unused            : 1;                                       \
+</string>
+			</dict>
+			<key>title</key>
+			<string>类的指针</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>100</string>
+					<key>StartingColumnNumber</key>
+					<string>0</string>
+					<key>StartingLineNumber</key>
+					<string>99</string>
+					<key>Timestamp</key>
+					<string>728206854.159968</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/isa.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>        uintptr_t magic             : 6;                                       \
+</string>
+				<key>leading</key>
+				<string>        uintptr_t has_cxx_dtor      : 1;                                       \
+        uintptr_t shiftcls          : 33; /*MACH_VM_MAX_ADDRESS 0x1000000000*/ \
+</string>
+				<key>trailing</key>
+				<string>        uintptr_t weakly_referenced : 1;                                       \
+        uintptr_t unused            : 1;                                       \
+        uintptr_t has_sidetable_rc  : 1;                                       \
+</string>
+			</dict>
+			<key>title</key>
+			<string>固定值为 0xd2，用于在调试时分辨对象是否未完成初始化。</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>97</string>
+					<key>StartingColumnNumber</key>
+					<string>80</string>
+					<key>StartingLineNumber</key>
+					<string>96</string>
+					<key>Timestamp</key>
+					<string>728206833.948791</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/isa.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>#     define ISA_BITFIELD                                                      \
+        uintptr_t nonpointer        : 1;                                       \
+        uintptr_t has_assoc         : 1;                                       \</string>
+				<key>trailing</key>
+				<string>        uintptr_t has_cxx_dtor      : 1;                                       \
+        uintptr_t shiftcls          : 33; /*MACH_VM_MAX_ADDRESS 0x1000000000*/ \
+        uintptr_t magic             : 6;                                       \
+</string>
+			</dict>
+			<key>title</key>
+			<string>表示该对象是否包含 associated object，如果没有，则析构时会更快</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>101</string>
+					<key>StartingColumnNumber</key>
+					<string>80</string>
+					<key>StartingLineNumber</key>
+					<string>100</string>
+					<key>Timestamp</key>
+					<string>728206867.426927</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/isa.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>        uintptr_t shiftcls          : 33; /*MACH_VM_MAX_ADDRESS 0x1000000000*/ \
+        uintptr_t magic             : 6;                                       \
+        uintptr_t weakly_referenced : 1;                                       \</string>
+				<key>trailing</key>
+				<string>        uintptr_t unused            : 1;                                       \
+        uintptr_t has_sidetable_rc  : 1;                                       \
+        uintptr_t extra_rc          : 19
+</string>
+			</dict>
+			<key>title</key>
+			<string>表示该对象是否有过 weak 对象，如果没有，则析构时更快</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>103</string>
+					<key>StartingColumnNumber</key>
+					<string>80</string>
+					<key>StartingLineNumber</key>
+					<string>102</string>
+					<key>Timestamp</key>
+					<string>728206878.3365771</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/isa.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>        uintptr_t weakly_referenced : 1;                                       \
+        uintptr_t unused            : 1;                                       \
+        uintptr_t has_sidetable_rc  : 1;                                       \</string>
+				<key>trailing</key>
+				<string>        uintptr_t extra_rc          : 19
+#     define ISA_HAS_INLINE_RC    1
+#     define RC_HAS_SIDETABLE_BIT 44
+</string>
+			</dict>
+			<key>title</key>
+			<string>表示该对象的引用计数值是否过大无法存储在 isa 指针</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>104</string>
+					<key>StartingColumnNumber</key>
+					<string>40</string>
+					<key>StartingLineNumber</key>
+					<string>103</string>
+					<key>Timestamp</key>
+					<string>728206886.895221</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/isa.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>        uintptr_t unused            : 1;                                       \
+        uintptr_t has_sidetable_rc  : 1;                                       \
+        uintptr_t extra_rc          : 19</string>
+				<key>trailing</key>
+				<string>#     define ISA_HAS_INLINE_RC    1
+#     define RC_HAS_SIDETABLE_BIT 44
+#     define RC_ONE_BIT           (RC_HAS_SIDETABLE_BIT+1)
+</string>
+			</dict>
+			<key>title</key>
+			<string>存储引用计数值减一后的结果</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>0</string>
+					<key>EndingLineNumber</key>
+					<string>107</string>
+					<key>StartingColumnNumber</key>
+					<string>35</string>
+					<key>StartingLineNumber</key>
+					<string>106</string>
+					<key>Timestamp</key>
+					<string>728206930.825348</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>runtime/objc-config.h</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>
+</string>
+				<key>leading</key>
+				<string>#   define SUPPORT_NONPOINTER_ISA 0
+#else
+#   define SUPPORT_NONPOINTER_ISA 1</string>
+				<key>trailing</key>
+				<string>#endif
+
+// Define SUPPORT_FIXUP=1 to repair calls sites for fixup dispatch.
+</string>
+			</dict>
+			<key>title</key>
+			<string>SUPPORT_NONPOINTER_ISA 标记是否支持优化的 isa 指针，其字面含义意思是 isa 的内容不再是类的指针了，而是包含了更多信息，比如引用计数，析构状态，被其他 weak 变量引用情况</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+	</array>
+</dict>
+</plist>
